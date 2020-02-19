@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Choirwizard HTML wireframe</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+
+<body>
+    <nav role="navigation" class="main-nav">Home | About | Create Catalogue | Add Music | Search </nav>
+    <main role="main">
+        <header role="banner">
+            <h1>Create Music Catalogue</h1>
+        </header>
+
+        <section>
+            <p class="directions">Please indicate which information you would like to include in your catalogue. If
+                there
+                is a category missing
+                that you would like to add, please add it in the "Other Fields" section.</p>
+            <form id="signup-form">
+                <div class="form-section">
+                    <label for="name">Catalogue Name</label>
+                    <input type="text" placeholder="Please enter your catalogue name">
+                </div>
+                <div class="form-section">
+                    <label for="name">Choir Name</label>
+                    <input type="text" placeholder="Which choir(s) will perform this music?">
+                </div>
+                <div class="form-section checkboxes">
+                    <h3>Desired Fields</h3>
+                    <div "checkbox-list">
+                        <div>
+                            <input type="checkbox" id="title" name="title" checked>
+                            <label for="title">Title</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="composer" name="composer" checked>
+                            <label for="composer">Composer</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="period" name="period">
+                            <label for="period">Style Period (Renaissance, Baroque, Contemporary ...) </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="voices" name="voices">
+                            <label for="voices">Voices (SSA, SATB ...) </label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="accompaniment" name="accompaniment">
+                            <label for="accompaniment">Accompaniment(piano, organ, obbligato instrument, a cappella...)
+                            </label>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="form-section">
+                    <label for="name">Other field</label>
+                    <input type="text" placeholder="Please enter field name">
+                </div>
+                <div class="form-section">
+                    <label for="name">Other field</label>
+                    <input type="text" placeholder="Please enter field name">
+                </div>
+                <div class="form-section">
+                    <label for="name">Other field</label>
+                    <input type="text" placeholder="Please enter field name">
+                </div>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+        </section>
+
+
+    </main>
+    <footer role="content-info">Footer</footer>
+</body>
+
+</html>
